@@ -1,5 +1,6 @@
 // Esse reducer será responsável por tratar o todas as informações relacionadas as despesas
 // Esse reducer será responsável por tratar as informações da pessoa usuária
+import { ADD_CURRENCIES, ADD_WALLET } from '../actions';
 
 const INITIAL_STATE = {
   currencies: [], // array de string
@@ -10,10 +11,16 @@ const INITIAL_STATE = {
 
 const walletReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-  // case ACTION_UM:
-  //   return {
-  //     ...state,
-  //   };
+  case ADD_WALLET:
+    return {
+      ...state,
+      wallet: action.payload,
+    };
+  case ADD_CURRENCIES:
+    return {
+      ...state,
+      currencies: action.payload,
+    };
   default:
     return state;
   }
