@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Route } from 'react-router-dom';
+import LoginPage from './components/LoginPage';
 
-function App() {
-  return <div>Hello, TrybeWallet!</div>;
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Route exact path="/" component={ LoginPage } />
+      </div>
+    );
+  }
 }
 
-export default App;
+export default connect()(App);
