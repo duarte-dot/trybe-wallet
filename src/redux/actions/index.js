@@ -5,6 +5,7 @@ export const ADD_CURRENCIES = 'ADD_CURRENCIES';
 export const ADD_WALLET = 'ADD_WALLET';
 export const ADD_EXPENSES = 'ADD_EXPENSES';
 export const ADD_EXPENSES_FORM = 'ADD_EXPENSES_FORM';
+export const DELETE_EXPENSE = 'DELETE_EXPENSE';
 
 export const addUser = (user) => ({
   type: ADD_USER,
@@ -24,6 +25,11 @@ export const addWallet = (wallet) => ({
 export const addExpenses = (expenses) => ({
   type: ADD_EXPENSES,
   payload: expenses,
+});
+
+export const deleteExpense = (expense) => ({
+  type: DELETE_EXPENSE,
+  payload: expense,
 });
 
 export function fetchCurrencies() {
