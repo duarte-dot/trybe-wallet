@@ -21,7 +21,7 @@ class LoginPage extends Component {
     const { email, password } = this.state;
     const MIN_LENGTH = 6;
     if (password.length >= MIN_LENGTH
-        && /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)) {
+        && /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*(?::[a-zA-Z0-9])?$/.test(email)) {
       this.setState({ isLoginButtonDisabled: false });
     } else {
       this.setState({ isLoginButtonDisabled: true });
