@@ -1,4 +1,4 @@
-import { mockData } from '../../../../cypress/mocks/data';
+import mockData from '../mockData';
 
 const INITIAL_STATE = {
   wallet: {

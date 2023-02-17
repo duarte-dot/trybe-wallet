@@ -71,8 +71,9 @@ class WalletForm extends Component {
     const { currencies, editor } = this.props;
     const { value, description } = this.state;
     return (
-      <div>
+      <div className="form-container">
         <form
+          className="horizontal-form"
           onSubmit={ async (e) => {
             if (!editor) {
               e.preventDefault();
@@ -87,64 +88,73 @@ class WalletForm extends Component {
             }
           } }
         >
-          <label htmlFor="value">
-            Valor:
-            <input
-              id="value"
-              value={ value }
-              name="value"
-              data-testid="value-input"
+          <div className="form-group">
+            <label htmlFor="value">
+              <p>Valor:</p>
+              <input
+                placeholder="Valor"
+                id="value"
+                value={ value }
+                name="value"
+                data-testid="value-input"
+                onChange={ this.handleChange }
+              />
+            </label>
+          </div>
+          <div className="form-group">
+            <select
+              className="select-coin"
+              data-testid="currency-input"
+              name="currency"
               onChange={ this.handleChange }
-            />
-          </label>
-          <select
-            className="select-coin"
-            data-testid="currency-input"
-            name="currency"
-            onChange={ this.handleChange }
-          >
-            { currencies.map((currencie) => (
-              <option
-                value={ currencie }
-                key={ currencie }
-              >
-                {currencie}
-              </option>
-            )) }
-          </select>
-          <select
-            id="method"
-            name="method"
-            data-testid="method-input"
-            onChange={ this.handleChange }
-          >
-            <option value="Dinheiro">Dinheiro</option>
-            <option value="Cartão de crédito">Cartão de crédito</option>
-            <option value="Cartão de débito">Cartão de débito</option>
-          </select>
-          <select
-            id="tag"
-            name="tag"
-            data-testid="tag-input"
-            onChange={ this.handleChange }
-          >
-            <option value="Alimentação">Alimentação</option>
-            <option value="Lazer">Lazer</option>
-            <option value="Trabalho">Trabalho</option>
-            <option value="Transporte">Transporte</option>
-            <option value="Saúde">Saúde</option>
-          </select>
-          <label htmlFor="description">
-            Descrição:
+            >
+              { currencies.map((currencie) => (
+                <option
+                  value={ currencie }
+                  key={ currencie }
+                >
+                  {currencie}
+                </option>
+              )) }
+            </select>
+          </div>
+          <div className="form-group">
+            <select
+              id="method"
+              name="method"
+              data-testid="method-input"
+              onChange={ this.handleChange }
+            >
+              <option value="Dinheiro">Dinheiro</option>
+              <option value="Cartão de crédito">Cartão de crédito</option>
+              <option value="Cartão de débito">Cartão de débito</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <select
+              id="tag"
+              name="tag"
+              data-testid="tag-input"
+              onChange={ this.handleChange }
+            >
+              <option value="Alimentação">Alimentação</option>
+              <option value="Lazer">Lazer</option>
+              <option value="Trabalho">Trabalho</option>
+              <option value="Transporte">Transporte</option>
+              <option value="Saúde">Saúde</option>
+            </select>
+          </div>
+          <div className="form-group">
             {' '}
             <input
+              placeholder="Descrição"
               value={ description }
               id="description"
               name="description"
               data-testid="description-input"
               onChange={ this.handleChange }
             />
-          </label>
+          </div>
           <button
             type="submit"
           >

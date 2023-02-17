@@ -13,7 +13,7 @@ class Header extends Component {
     }, []).reduce((prev, curr) => prev + curr, 0);
 
     return (
-      <div>
+      <header className="header">
         <h1>Trybe Wallet</h1>
         <p data-testid="email-field">
           Email:
@@ -30,7 +30,7 @@ class Header extends Component {
         >
           BRL
         </p>
-      </div>
+      </header>
     );
   }
 }
