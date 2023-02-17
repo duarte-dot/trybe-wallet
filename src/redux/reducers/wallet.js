@@ -2,7 +2,6 @@
 // Esse reducer será responsável por tratar as informações da pessoa usuária
 import { ADD_CURRENCIES,
   ADD_EXPENSES,
-  ADD_WALLET,
   DELETE_EXPENSE,
   EDIT_EXPENSE,
   EDIT_EXPENSE_REQUEST } from '../actions';
@@ -16,11 +15,6 @@ const INITIAL_STATE = {
 
 const walletReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-  case ADD_WALLET:
-    return {
-      ...state,
-      wallet: action.payload,
-    };
   case ADD_CURRENCIES:
     return {
       ...state,
