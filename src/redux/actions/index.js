@@ -6,6 +6,8 @@ export const ADD_WALLET = 'ADD_WALLET';
 export const ADD_EXPENSES = 'ADD_EXPENSES';
 export const ADD_EXPENSES_FORM = 'ADD_EXPENSES_FORM';
 export const DELETE_EXPENSE = 'DELETE_EXPENSE';
+export const EDIT_EXPENSE_REQUEST = 'EDIT_EXPENSE_REQUEST';
+export const EDIT_EXPENSE = 'EDIT_EXPENSE';
 
 export const addUser = (user) => ({
   type: ADD_USER,
@@ -29,6 +31,16 @@ export const addExpenses = (expenses) => ({
 
 export const deleteExpense = (expense) => ({
   type: DELETE_EXPENSE,
+  payload: expense,
+});
+
+export const editExpenseRequest = (expense) => ({
+  type: EDIT_EXPENSE_REQUEST,
+  payload: expense,
+});
+
+export const editExpense = (expense) => ({
+  type: EDIT_EXPENSE,
   payload: expense,
 });
 
