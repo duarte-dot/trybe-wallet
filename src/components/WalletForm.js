@@ -157,6 +157,7 @@ class WalletForm extends Component {
           </div>
           <button
             type="submit"
+            className="button-add"
           >
             { editor ? 'Editar despesa' : 'Adicionar despesa' }
           </button>

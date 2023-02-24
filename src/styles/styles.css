@@ -1,49 +1,22 @@
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-table {
-  margin-top: 1%;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-thead {
-  background-color: #1c261e;
-}
-
-th {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  color: white;
-}
-
-td {
-  padding: 8px;
-  padding-left: 0px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  font-weight: bold;
-  text-align: center;
-}
-
-td:last-child {
-  text-align: center;
-}
-
-td:last-child button {
-  margin-right: 8px;
+  max-height: 385.85px;
+  min-height: 385.85px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.03);
+  background: linear-gradient(-45deg, #ffedef, #ffe3f0, #ffbdc7, #fcaebb);
+  background-size: 100% 600%;
+  animation: gradient 10s ease-in-out infinite reverse;
 }
 
 .form-container {
   display: flex;
   justify-content: center;
+  width: 564.484px;
+  height: 124px;
 }
 
 .horizontal-form {
@@ -70,6 +43,7 @@ input {
   margin-right: 10px;
 }
 
+
 button {
   /* margin-top: 1rem; */
   padding: 0.5rem;
@@ -79,3 +53,164 @@ button {
 label p {
   display: none;
 }
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  width: 10%;
+}
+
+th {
+  /* background-color: blue; */
+  /* border: green 2px solid; */
+  color: green;
+  font-weight: bold;
+}
+
+table {
+  border-top: 10px green solid;
+  /* margin-top: 1%; */
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.div-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boneco-1 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 310px;
+  animation: bouncing 1s ease-in alternate infinite;
+}
+
+.img-logo {
+  width: 50px;
+  margin-right: 5%;
+  animation-name: shake;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2, end);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-self: baseline;
+  margin-left: 3%;
+  align-items: center;
+  width: 300px
+}
+
+.title {
+  font-size: 25px;
+}
+
+.spend {
+  font-size: 22px;
+  margin-top: 2%;
+  margin-bottom: 110px;
+  animation: bouncing 1s ease-in alternate infinite;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+  align-self: flex-end;
+  margin-right: 5%;
+  text-align: start;
+  margin-right: 10.5%;
+  margin-top: 1%;
+  position: absolute;
+}
+
+.button-add {
+  background-color: #4CAF50; /* cor de fundo */
+  border: none; /* sem borda */
+  color: white; /* cor do texto */
+  padding: 10px 20px; /* preenchimento */
+  text-align: center; /* alinhamento do texto */
+  text-decoration: none; /* sem decoração de texto */
+  display: inline-block; /* exibição em bloco */
+  font-size: 16px; /* tamanho da fonte */
+  margin-right: 1.9%;
+  margin-top: -0.1%;
+  cursor: pointer; /* cursor de ponteiro */
+  border-radius: 5px; /* arredondamento da borda */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* sombra */
+  transition: background-color 0.3s ease; /* transição de cor de fundo */
+}
+
+.button-add:hover {
+  background-color: #3e8e41; /* cor de fundo quando o mouse passa por cima */
+}
+
+@media all and (max-width: 1325px) {
+  .form-container {
+    margin-left: 10%;
+  }
+}
+
+@media all and (max-width: 1190px) {
+  .form-container {
+    margin-left: 20%;
+  }
+}
+
+@media all and (max-width: 1085px) {
+  .user-info {
+    margin-right: 3.5%;
+  }
+
+  .form-container {
+    margin-left: 0%;
+    z-index: 2;
+  }
+
+  .boneco-1 {
+    opacity: .8;
+    filter: blur(0.6px);
+  }
+}
+
+@media all and (max-width: 960px) {
+  .boneco-1 {
+    left: 10px;
+  }
+}
+
+@media all and (max-width: 880px) {
+  .boneco-1 {
+    left: -40px;
+  }
+}
+
+@keyframes bouncing {
+  to {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateY(0); }
+  10%, 90% { transform: translateY(-5px); }
+  20%, 80% { transform: translateY(5px); }
+  30%, 50%, 70% { transform: translateY(-5px); }
+  40%, 60% { transform: translateY(5px); }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -100% 50%;
+  }
+} 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import WalletForm from './WalletForm';
 
 class Header extends Component {
   render() {
@@ -14,22 +15,34 @@ class Header extends Component {
 
     return (
       <header className="header">
-        <h1>Trybe Wallet</h1>
-        <p data-testid="email-field">
-          Email:
-          {' '}
-          {email}
-        </p>
-        <p
-          data-testid="total-field"
-        >
-          { parseFloat(total).toFixed(2) }
-        </p>
-        <p
+        <div className="logo">
+          <img className="img-logo" src="https://user-images.githubusercontent.com/78454964/221063269-f39b0a0f-9f3a-4524-b5e6-7aa24740f877.png" alt="logo" />
+          <p className="title">
+            Trybe
+            {' '}
+            <strong>Wallet</strong>
+          </p>
+        </div>
+        <div className="user-info">
+          <p data-testid="email-field">
+            Email:
+            {' '}
+            {email}
+          </p>
+          <p
+            data-testid="total-field"
+          >
+            { `Total de despesas: ${parseFloat(total).toFixed(2)} BRL` }
+          </p>
+        </div>
+        <h3
+          className="spend"
           data-testid="header-currency-field"
         >
-          BRL
-        </p>
+          Gaste com sabedoria
+        </h3>
+        <WalletForm />
+        <img className="boneco-1" src="https://user-images.githubusercontent.com/78454964/221045886-9f986478-044f-4394-b95b-249d703a74ae.png" alt="boneco-1" />
       </header>
     );
   }
