@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 import { deleteExpense, editExpenseRequest } from '../redux/actions';
 
 class Table extends Component {
@@ -45,13 +46,13 @@ class Table extends Component {
                         dispatch(editExpenseRequest({ edit: true, id: item.id }));
                       } }
                     >
-                      Editar
+                      <AiFillEdit className="edit-delete-buttons" />
                     </button>
                     <button
                       onClick={ () => dispatch(deleteExpense(item.id)) }
                       data-testid="delete-btn"
                     >
-                      Excluir
+                      <AiFillDelete className="edit-delete-buttons" />
                     </button>
                   </td>
                 </tr>

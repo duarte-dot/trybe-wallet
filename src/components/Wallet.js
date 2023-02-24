@@ -5,7 +5,7 @@ import Table from './Table';
 class Wallet extends Component {
   render() {
     return (
-      <div>
+      <div className="wallet">
         <Header />
         <Table />
       </div>

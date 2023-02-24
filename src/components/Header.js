@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { FaUserCircle } from 'react-icons/fa';
+import { BsFillPiggyBankFill } from 'react-icons/bs';
 import WalletForm from './WalletForm';
 
 class Header extends Component {
@@ -23,15 +25,20 @@ class Header extends Component {
             <strong>Wallet</strong>
           </p>
         </div>
+        {/* <img className="pig" src="https://user-images.githubusercontent.com/78454964/221200615-f33a165c-216e-4787-a48e-8101162470b9.png" alt="pig" />
+        <img className="user-image" src="https://user-images.githubusercontent.com/78454964/221200598-7cbc3264-29d6-4b12-9883-5594627c41ac.png" alt="user" /> */}
         <div className="user-info">
-          <p data-testid="email-field">
+          <p data-testid="email-field" className="userinfo">
+            <FaUserCircle className="user-icon" />
             Email:
             {' '}
             {email}
           </p>
           <p
             data-testid="total-field"
+            className="userinfo"
           >
+            <BsFillPiggyBankFill className="pig-icon" />
             { `Total de despesas: ${parseFloat(total).toFixed(2)} BRL` }
           </p>
         </div>
@@ -42,7 +49,7 @@ class Header extends Component {
           Gaste com sabedoria
         </h3>
         <WalletForm />
-        <img className="boneco-1" src="https://user-images.githubusercontent.com/78454964/221045886-9f986478-044f-4394-b95b-249d703a74ae.png" alt="boneco-1" />
+        <img className="boneco-1" src="https://user-images.githubusercontent.com/78454964/221205889-de80112a-3484-4172-8598-69289588cb57.png" alt="boneco-1" />
       </header>
     );
   }

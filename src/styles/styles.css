@@ -7,9 +7,38 @@
   min-height: 385.85px;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.03);
-  background: linear-gradient(-45deg, #ffedef, #ffe3f0, #ffbdc7, #fcaebb);
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(143, 135, 138, 0.5),
+    rgba(119, 131, 129, 0.418)
+  ),
+  url('https://user-images.githubusercontent.com/78454964/221198912-6bd05f85-567d-45ba-a5fd-dbbabad5b0b7.png');
   background-size: 100% 600%;
-  animation: gradient 10s ease-in-out infinite reverse;
+  animation: gradient 120s ease-in-out infinite reverse;
+}
+
+.edit-delete-buttons {
+  width: 20px;
+  height: 20px;
+}
+
+.userinfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pig-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.user-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
 }
 
 .form-container {
@@ -75,12 +104,14 @@ table {
   width: 100%;
   border-radius: 10px;
   max-width: 80%;
+  text-align: center;
+  margin-left: 9%;
 }
 
 .div-table {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .boneco-1 {
@@ -118,7 +149,7 @@ table {
   margin-top: 2%;
   margin-bottom: 110px;
   animation: bouncing 1s ease-in alternate infinite;
-  color: white;
+  color: #e4e6eb;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -152,6 +183,16 @@ table {
   background-color: #3e8e41; /* cor de fundo quando o mouse passa por cima */
 }
 
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 1325px) {
   .form-container {
     margin-left: 10%;
@@ -166,7 +207,13 @@ table {
 
 @media all and (max-width: 1085px) {
   .user-info {
-    margin-right: 3.5%;
+    margin-right: 10.5%;
+  }
+
+  .spend {
+    font-size: 22px;
+    margin-top: 6%;
+    margin-bottom: 80px;
   }
 
   .form-container {
@@ -178,19 +225,89 @@ table {
     opacity: .8;
     filter: blur(0.6px);
   }
+
+  table {
+    margin-left: 0%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1020px) {
+  table {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 960px) {
   .boneco-1 {
     left: 10px;
   }
-}
 
-@media all and (max-width: 880px) {
-  .boneco-1 {
-    left: -40px;
+  table {
+    margin-left: 4%;
   }
 }
+
+@media all and (max-width: 885px) {
+  table {
+    margin-left: 0;
+  }
+
+  .wallet {
+    width: 116vw;
+  }
+}
+
+@media all and (max-width: 705px) {
+
+  table {
+    margin-left: 0;
+  }
+
+  .wallet {
+    width: 151vw;
+  }
+}
+
+@media all and (max-width: 555px) {
+
+  table {
+    margin-left: 0;
+  }
+
+  .wallet {
+    width: 187vw;
+  }
+}
+
+@media all and (max-width: 445px) {
+
+  table {
+    margin-left: 0;
+  }
+
+  .wallet {
+    width: 277vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes bouncing {
   to {
