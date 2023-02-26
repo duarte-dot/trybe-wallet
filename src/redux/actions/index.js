@@ -52,7 +52,8 @@ export function fetchCurrencies() {
 }
 
 export async function fetchExpenses() {
-  return fetch('https://economia.awesomeapi.com.br/json/all')
-    .then((response) => response.json())
-    .then((expenses) => expenses);
+  const response = await fetch('https://economia.awesomeapi.com.br/json/all');
+  const expenses = await response.json();
+  expenses.BRL = { name: 'Real  Brasileiro', bid: '1', code: 'BRL', ask: '1' };
+  return expenses;
 }

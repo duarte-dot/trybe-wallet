@@ -11,7 +11,7 @@ class WalletForm extends Component {
   state = {
     value: '',
     description: '',
-    currency: 'USD',
+    currency: 'BRL',
     method: 'Dinheiro',
     tag: 'Alimentação',
   };
@@ -35,7 +35,7 @@ class WalletForm extends Component {
       this.setState({
         value: '',
         description: '',
-        currency: 'USD',
+        currency: 'BRL',
         method: 'Dinheiro',
         tag: 'Alimentação',
       });
@@ -49,6 +49,7 @@ class WalletForm extends Component {
     const id = expenses.length;
     const fetch = await fetchExpenses();
     const { value, description, currency, method, tag } = this.state;
+    console.log(await fetch);
     dispatch(addExpenses({
       id,
       value,
@@ -108,6 +109,11 @@ class WalletForm extends Component {
               name="currency"
               onChange={ this.handleChange }
             >
+              <option
+                value="BRL"
+              >
+                BRL
+              </option>
               { currencies.map((currencie) => (
                 <option
                   value={ currencie }
