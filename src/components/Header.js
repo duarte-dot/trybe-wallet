@@ -9,6 +9,7 @@ class Header extends Component {
   render() {
     const { expenses } = this.props;
     const { email } = this.props;
+    console.log(expenses);
     const total = expenses.reduce((prev, curr, i) => {
       const actualValue = expenses.map((expense) => expense.value);
       const actualCurrency = expenses.map((expense) => expense.currency);

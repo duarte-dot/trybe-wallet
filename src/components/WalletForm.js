@@ -28,6 +28,7 @@ class WalletForm extends Component {
       .then((response) => response.json())
       .then((data) => data);
     delete exchangeRates.USDT;
+    exchangeRates.BRL = { name: 'Real  Brasileiro', bid: '1', code: 'BRL', ask: '1' };
 
     const dispatching = () => {
       dispatch(editExpenseRequest({ editor: false, id: 0 }));
