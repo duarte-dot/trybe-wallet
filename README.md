@@ -1,13 +1,44 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# <a target="_blank" href="http://duarte-dot-trybewallet.surge.sh/">Trybe Wallet</a>
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+O Trybe Wallet é uma aplicação web que permite ao usuário controlar seus gastos, além de converter o total de gastos para uma moeda de sua escolha. Com essa aplicação, o usuário pode fazer login, adicionar, remover e editar um gasto, visualizar uma tabela com seus gastos e visualizar o total de gastos convertidos para uma moeda de escolha.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## Funcionalidades
+
+<ul>
+  <li>Fazer login;</li>
+  <li>Adicionar, remover e editar um gasto;</li>
+  <li>Visualizar uma tabela com seus gastos;</li>
+  <li>Visualizar o total de gastos convertidos para uma moeda de escolha.</li>
+</ul>
+
+## Tecnologias utilizadas
+
+<ul>
+  <li>React</li>
+  <li>Redux</li>
+  <li>API de cotações da AwesomeAPI</li>
+  <li>CSS</li>
+</ul>
+
+## Como rodar o projeto
+
+Clone o repositório: git clone https://github.com/duarte-dot/trybe-wallet.git <br/>
+Entre na pasta do projeto: cd trybe-wallet <br/>
+Instale as dependências: npm install <br/>
+Inicie o servidor: npm start <br/>
+Acesse a aplicação no seu navegador em: http://localhost:3000 <br/>
+
+## Principais aprendizados
+
+<ul>
+  <li>Criar uma store Redux em aplicações React;</li>
+  <li>Criar reducers no Redux em aplicações React;</li>
+  <li>Criar actions no Redux em aplicações React;</li>
+  <li>Criar dispatchers no Redux em aplicações React;</li>
+  <li>Conectar Redux aos componentes React;</li>
+  <li>Criar actions assíncronas na sua aplicação React que faz uso de Redux.</li>
+</ul>
+
+## Conclusão
+
+Este projeto foi uma oportunidade de aplicar os conhecimentos adquiridos durante o curso da Trybe sobre Redux em aplicações React e consumir dados de uma API externa. Com as funcionalidades desenvolvidas, o usuário pode controlar seus gastos de forma fácil e intuitiva, além de visualizar o total de gastos convertidos para a moeda de sua escolha. Com a implementação do Redux, o estado da aplicação é gerenciado de forma eficiente e organizada, permitindo uma melhor experiência para o usuário.
