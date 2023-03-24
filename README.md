@@ -21,12 +21,13 @@ O Trybe Wallet é uma aplicação web que permite ao usuário controlar seus gas
 </ul>
 
 ## Como rodar o projeto
-
-Clone o repositório: git clone https://github.com/duarte-dot/trybe-wallet.git <br/>
-Entre na pasta do projeto: cd trybe-wallet <br/>
-Instale as dependências: npm install <br/>
-Inicie o servidor: npm start <br/>
-Acesse a aplicação no seu navegador em: http://localhost:3000 <br/>
+<ol>
+  <li>Clone o repositório: git clone https://github.com/duarte-dot/trybe-wallet.git</li>
+  <li>Entre na pasta do projeto: cd trybe-wallet</li>
+  <li>Entre na pasta do projeto: cd trybe-wallet</li>
+  <li>Instale as dependências: npm install</li>
+  <li>Inicie o servidor: npm start</li>
+  <li>Acesse a aplicação no seu navegador em: http://localhost:3000</li>
 
 ## Principais aprendizados
 
