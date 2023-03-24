@@ -28,6 +28,7 @@ O Trybe Wallet é uma aplicação web que permite ao usuário controlar seus gas
   <li>Instale as dependências: npm install</li>
   <li>Inicie o servidor: npm start</li>
   <li>Acesse a aplicação no seu navegador em: http://localhost:3000</li>
+</ol>
 
 ## Principais aprendizados
 
