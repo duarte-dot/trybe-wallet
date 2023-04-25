@@ -14,21 +14,24 @@ O Trybe Wallet é uma aplicação web que permite ao usuário controlar seus gas
 ## Tecnologias utilizadas
 
 <ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
   <li>React</li>
   <li>Redux</li>
   <li>API de cotações da AwesomeAPI</li>
-  <li>CSS</li>
 </ul>
 
 ## Como rodar o projeto
 <ol>
   <li>Clone o repositório: git clone https://github.com/duarte-dot/trybe-wallet.git</li>
   <li>Entre na pasta do projeto: cd trybe-wallet</li>
-  <li>Entre na pasta do projeto: cd trybe-wallet</li>
   <li>Instale as dependências: npm install</li>
   <li>Inicie o servidor: npm start</li>
   <li>Acesse a aplicação no seu navegador em: http://localhost:3000</li>
 </ol>
+
+Você também pode acessar através do <a target="_blank" href="https://duarte-dot-trybewallet.surge.sh/">link de deploy</a>
 
 ## Principais aprendizados
 
