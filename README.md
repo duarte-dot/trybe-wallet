@@ -19,7 +19,7 @@ O Trybe Wallet é uma aplicação web que permite ao usuário controlar seus gas
   <li>JavaScript</li>
   <li>React</li>
   <li>Redux</li>
-  <li>API de cotações da AwesomeAPI</li>
+  <a target="_blank" href="https://docs.awesomeapi.com.br/api-de-moedas"> <li>API de cotações da AwesomeAPI</li>
 </ul>
 
 ## Como rodar o projeto
