@@ -1,17 +1,17 @@
-# <a target="_blank" href="http://duarte-dot-trybewallet.surge.sh/">Trybe Wallet</a>
+# Trybe Wallet
 
-O Trybe Wallet é uma aplicação web que permite ao usuário controlar seus gastos, além de converter o total de gastos para uma moeda de sua escolha. Com essa aplicação, o usuário pode fazer login, adicionar, remover e editar um gasto, visualizar uma tabela com seus gastos e visualizar o total de gastos convertidos para uma moeda de escolha.
+<a target="_blank" href="http://duarte-dot-trybewallet.surge.sh/">Trybe Wallet</a> is a web application that allows users to manage their expenses and convert the total expenditure into a currency of their choice. With this application, users can log in, add, remove, and edit an expense, view a table of their expenses, and see the total expenses converted to a chosen currency.
 
-## Funcionalidades
+## Features
 
 <ul>
-  <li>Fazer login;</li>
-  <li>Adicionar, remover e editar um gasto;</li>
-  <li>Visualizar uma tabela com seus gastos;</li>
-  <li>Visualizar o total de gastos convertidos para uma moeda de escolha.</li>
+  <li>Login functionality;</li>
+  <li>Add, remove, and edit an expense;</li>
+  <li>View a table of expenses;</li>
+  <li>View the total expenses converted to a chosen currency.</li>
 </ul>
 
-## Tecnologias utilizadas
+## Technologies Used
 
 <ul>
   <li>HTML</li>
@@ -19,31 +19,32 @@ O Trybe Wallet é uma aplicação web que permite ao usuário controlar seus gas
   <li>JavaScript</li>
   <li>React</li>
   <li>Redux</li>
-  <a target="_blank" href="https://docs.awesomeapi.com.br/api-de-moedas"> <li>API de cotações da AwesomeAPI</li>
+  <a target="_blank" href="https://docs.awesomeapi.com.br/api-de-moedas"> <li>AwesomeAPI currency quotes API</li> </a>
 </ul>
 
-## Como rodar o projeto
+## How to Run the Project
+
 <ol>
-  <li>Clone o repositório: git clone https://github.com/duarte-dot/trybe-wallet.git</li>
-  <li>Entre na pasta do projeto: cd trybe-wallet</li>
-  <li>Instale as dependências: npm install</li>
-  <li>Inicie o servidor: npm start</li>
-  <li>Acesse a aplicação no seu navegador em: http://localhost:3000</li>
+  <li>Clone the repository: git clone https://github.com/duarte-dot/trybe-wallet.git</li>
+  <li>Navigate into the project directory: cd trybe-wallet</li>
+  <li>Install dependencies: npm install</li>
+  <li>Start the server: npm start</li>
+  <li>Access the application in your browser at: http://localhost:3000</li>
 </ol>
 
-Você também pode acessar através do <a target="_blank" href="https://duarte-dot-trybewallet.surge.sh/">link de deploy</a>.
+You can also access it through the <a target="_blank" href="https://duarte-dot-trybewallet.surge.sh/">deployment link</a>.
 
-## Principais aprendizados
+## Key Learnings
 
 <ul>
-  <li>Criar uma store Redux em aplicações React;</li>
-  <li>Criar reducers no Redux em aplicações React;</li>
-  <li>Criar actions no Redux em aplicações React;</li>
-  <li>Criar dispatchers no Redux em aplicações React;</li>
-  <li>Conectar Redux aos componentes React;</li>
-  <li>Criar actions assíncronas na sua aplicação React que faz uso de Redux.</li>
+  <li>Create a Redux store in React applications;</li>
+  <li>Create reducers in Redux for React applications;</li>
+  <li>Create actions in Redux for React applications;</li>
+  <li>Create dispatchers in Redux for React applications;</li>
+  <li>Connect Redux to React components;</li>
+  <li>Create asynchronous actions in your React application that use Redux.</li>
 </ul>
 
-## Conclusão
+## Conclusion
 
-Este projeto foi uma oportunidade de aplicar os conhecimentos adquiridos durante o curso da Trybe sobre Redux em aplicações React e consumir dados de uma API externa. Com as funcionalidades desenvolvidas, o usuário pode controlar seus gastos de forma fácil e intuitiva, além de visualizar o total de gastos convertidos para a moeda de sua escolha. Com a implementação do Redux, o estado da aplicação é gerenciado de forma eficiente e organizada, permitindo uma melhor experiência para o usuário.
+This project provided an opportunity to apply the knowledge gained during the Trybe course on using Redux in React applications and consuming data from an external API. With the implemented features, users can manage their expenses in an easy and intuitive manner, and view the total expenses converted to their chosen currency. The use of Redux efficiently manages the application state, providing a better user experience.
