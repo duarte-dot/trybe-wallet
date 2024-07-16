@@ -48,3 +48,4 @@ You can also access it through the <a target="_blank" href="https://duarte-dot-t
 ## Conclusion
 
 This project provided an opportunity to apply the knowledge gained during the Trybe course on using Redux in React applications and consuming data from an external API. With the implemented features, users can manage their expenses in an easy and intuitive manner, and view the total expenses converted to their chosen currency. The use of Redux efficiently manages the application state, providing a better user experience.
+
